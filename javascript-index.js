@@ -45,5 +45,9 @@ function filterLanuage(language){
 }
 
 onload=()=>{
-    filterLanuage(localStorage.getItem('lang'))
+    if(localStorage.getItem("lang") != null){
+        filterLanuage(localStorage.getItem('lang'))
+    }else{
+        filterLanuage("english")
+    }
 }

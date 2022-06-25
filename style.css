@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+h1 span{
+    color: crimson;
+}
+
+/* header section */
+.header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #77837eaf;
+    box-shadow: 0 0 10px gray;
+}
+.logo{
+    transform: translateX(-20px);
+    width: 200px;
+    filter:grayscale(1);
+}
+.minueBar{
+    position: absolute;
+    left: 10px;
+    width: 30px;
+    opacity: .7;
+    cursor: pointer;
+}
+.minueBar:hover{
+    transform: scale(1.1);
+    transition: ease .5s transform;
+}
+.language{
+    position: absolute;
+    right: 10px;
+}
+.languageButton{
+    width: 90px;
+    height: 35px;
+    border: 2px double crimson;
+    color: black;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 1000;
+    cursor: pointer;
+}
+.languageButton:hover{
+    transform: scale(1.1);
+    transition: ease .5s transform;
+    background-color: crimson;
+    color: white;
+}
+/* End of header section */
+
+/* body section */
+.tokens{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:50px auto;
+}
+.clientCard{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+#whatWeDo{
+    margin: 15px 50px;
+    text-align: center;
+}
+.clientCard img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+}
+.tockenBottom{
+    width: 300px;
+    height: 30px;
+    background-color: crimson;
+    color: rgb(221, 207, 207);
+    font-size: 19px;
+    border-radius: 6px 6px 0 0 ;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* End of body section */
+
+/* footer section */
+.footer{
+    position: relative;
+    background-color:#727272af ;
+    height: 300px;
+}
+.footer h1{
+    position: relative;
+    top: 20px;
+    text-decoration: underline crimson double;
+}
+.footer p{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: crimson;
+}
+/* End of footer section */
